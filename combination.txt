@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int comb(int n)
+{ 
+    int fact=1;
+    while(n>0)
+    {
+        fact=fact*n;
+        n--;
+    }
+    return fact;
+}
+
+int main()
+{
+    int n,r,i,j,k;
+    cin>>n>>r;
+    i=comb(n);
+    j=comb(n-r);
+    k=comb(r);
+    cout<<i/(j*k);
+}
+
+
+OUTPUT:
+
+6
+3
+20
