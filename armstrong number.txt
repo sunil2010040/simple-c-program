@@ -1,0 +1,46 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+    int n,i,j;
+    cin>>n;
+    int k=n;
+    int l=n;
+    int sum=0,count=0;
+    
+    while(n>0)
+    {
+        count++;
+        n=n/10;
+    }
+    
+    
+    while(k>0)
+    {
+        i=k%10;
+        j=pow(i,count);
+        sum=sum+j;
+        k=k/10;
+        
+    }
+    
+    if(l==sum)
+    {
+        cout<<"this is an armstrong number";
+    }
+    
+    else
+
+    {
+        cout<<"this is an not armstrong number";
+    }
+    
+   
+    return 0;
+}
+
+OUTPUT:
+
+8208
+this is an armstrong number
